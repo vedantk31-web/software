@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Received Messages</title>
+</head>
+<body>
+    <h1>Received Messages</h1>
+    <ul>
+        {% for message in received_messages %}
+        <li>{{ message.message }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/dashboard" method="get">
+        <button type="submit">Back to Dashboard</button>
+    </form>
+</body>
+</html>
